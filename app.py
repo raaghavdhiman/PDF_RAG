@@ -166,6 +166,7 @@ with tab1:
             with st.spinner("Reading and indexing your PDF..."):
                 reader = PdfReader(BytesIO(file_bytes))
                 text = "".join(page.extract_text() for page in reader.pages)
+                text = text.replace("\x00", "")
                 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
                 chunks = splitter.split_text(text)
                 metadatas = [{"file_hash": file_hash} for _ in chunks]
