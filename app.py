@@ -101,6 +101,10 @@ h1, h2, h3 { font-family: 'Newsreader', serif !important; letter-spacing: -0.01e
 """, unsafe_allow_html=True)
 
 @st.cache_resource
+def get_embeddings():
+    return HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+@st.cache_resource
 def get_llm():
     return ChatGroq(groq_api_key=get_secret("GROQ_API_KEY"), model="openai/gpt-oss-20b")
 
