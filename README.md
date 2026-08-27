@@ -2,6 +2,12 @@
 
 Ask questions about any PDF and get answers grounded only in that document's actual content — not the model's general knowledge. Built as a hands-on exploration of Retrieval-Augmented Generation (RAG): chunking, embeddings, vector search, and grounded generation, wired into a persistent, multi-document Streamlit app.
 
+# PDF Q&A Chatbot (RAG)
+
+**[Try the live app →](https://doc-archive.streamlit.app/)**
+
+Ask questions about any PDF and get answers grounded only in that document's actual content — not the model's general knowledge.
+
 ## How it works
 
 1. **Upload** — a PDF is read, split into overlapping ~500-character chunks, and each chunk is embedded locally using a HuggingFace sentence-transformer (`all-MiniLM-L6-v2`, 384-dimensional vectors)
