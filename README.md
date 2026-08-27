@@ -1,12 +1,8 @@
 # PDF Q&A Chatbot (RAG)
 
-Ask questions about any PDF and get answers grounded only in that document's actual content — not the model's general knowledge. Built as a hands-on exploration of Retrieval-Augmented Generation (RAG): chunking, embeddings, vector search, and grounded generation, wired into a persistent, multi-document Streamlit app.
-
-# PDF Q&A Chatbot (RAG)
+Ask questions about any PDF and get answers grounded only in that document's actual content, not the model's general knowledge. Built as a hands-on exploration of Retrieval-Augmented Generation (RAG): chunking, embeddings, vector search, and grounded generation, wired into a persistent, multi-document Streamlit app.
 
 **[Try the live app →](https://doc-archive.streamlit.app/)**
-
-Ask questions about any PDF and get answers grounded only in that document's actual content — not the model's general knowledge.
 
 ## How it works
 
